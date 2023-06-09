@@ -269,3 +269,41 @@ body {
     border-bottom: 2px solid red;
 }
 
+/* NEWS & ARTICLES */
+.articles {
+    padding: 3rem 6rem;
+}
+
+.articleTitle {
+    padding-bottom: 1rem;
+}
+
+.newsArticles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.newsCard {
+    width: 35rem;
+    display: flex; 
+    gap: 2rem;
+}
+.thumbnail {
+    width: 13rem;
+}
+.newsBody {
+    width: 20rem;
+}
+.newsCardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.newsLink {
+    letter-spacing: 3px;
+    color: red;
+    font-weight: 700;
+}
