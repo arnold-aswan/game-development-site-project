@@ -1,11 +1,2 @@
-<nav>
-<logo>
-
-home
-our games
-our studio
-About us
-contact
-
-<console icons>
-<nav>
+live site
+https://arnold-aswan.github.io/game-development-site-project/
