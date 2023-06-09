@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Share+Tech+Mono&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray-blue: #415a77;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    color: #000;
+}
+
+/* Navigation */
+.navbar {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.links, .consoleIcons {
+    display: flex;
+    gap: 2rem;
+}
+
+.listItem a {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.listItem a:hover {
+    color: white;
+}
+
+.iconItem .fa-brands {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.iconItem .fa-brands:hover {
+    color: greenyellow;
+}
+
+/* HERO LANDING SECTION */
+.hero {
+    height: 30rem;
+    background-image: url("./Images/tsushima.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.tsushima {
+    color: #fff;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 3.5rem;
+    max-width: 30rem;
+    float: right;
+    margin-top: 3rem;
+    text-transform: capitalize;
+}
+
+/* LATEST RELEASE */
+.releases {
+    margin-inline: 4.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.more {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mReleases i {
+    margin-left: .5rem;
+}
+.mReleases {
+    padding: 1rem;
+    font-family: inherit;
+    border: 2px solid #000;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mReleases:hover {
+    color: white;
+    background: #000;
+}
+.head {
+    padding-bottom: 2rem;
+}
+
+.latestReleases {
+    display: flex;
+    gap: 2rem;
+}
+
+.card {
+    border: 1px solid #7A7A7A;
+    display: flex;
+    flex-direction: column;
+}
+.game {
+    width: 20rem;
+}
+
+.description p {
+    color: black;
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.btn {
+    font-family: inherit;
+    padding: 1rem 1.5rem;
+    background-color: transparent;
+    margin-left: 32%;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+.btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* ABOUT US */
+.aboutUs {
+    background: 
+    linear-gradient(
+          rgba(0, 0, 0, 0.4), 
+          rgba(0, 0, 0, 0.4)
+        ),
+    url("./Images/dark-forest-hd-wallpaper-preview.jpg");  
+}
+
+.details {
+    margin-inline: 5rem;
+    padding: 2rem 5rem;
+}
+
+.details .title, .detailsP {
+    color: white;
+    font-weight: 500;
+    padding-block: 1rem;
+}
+
+/* OUR TEAM */
+
+.ourTeam article {
+    text-align: center;
+    max-width: 50rem;
+    margin: auto;
+}
+
+.teamSub {
+    font-size: 1.5rem;
+}
+.teamHead {
+    font-size: 2.5rem;
+}
+.team {
+    margin: 2rem 5rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.avatar {
+    width: 15rem;
+}
+
+.position {
+    color: gray;
+}
+
+/* CONTACT US */
+.contactUs {
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    color: #fff;
+    padding: 3rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.contact {
+    max-width: 30rem;
+}
+
+.quiz {
+    font-size: 2.5rem;
+}
+.hear, .quiz {
+    padding-bottom: 1rem;
+}
+form {
+    padding: 2rem 3rem;
+    background-color: white;
+}
+
+.formControl {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.formControl input, textarea {
+    font-family: inherit;
+    padding: .8rem 1.5rem;
+    border-radius: .8rem;
+    outline: transparent;
+    border: none;
+}
+
+.submit {
+    padding: .6rem 2rem;
+    border: 2px solid black;
+    border-radius: .5rem;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.submit i {
+    font-size: 2rem;
+}
