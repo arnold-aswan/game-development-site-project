@@ -65,7 +65,7 @@
         <section class="releases">
             <div class="more">
                 <h2 class="head">Latest releases</h2>
-                <button class="mReleases">
+                <button class="mReleases dice">
                     More Releases
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
@@ -81,13 +81,13 @@
                         <h4 class="desc">
                             Assassin's Creed Red
                         </h4>
-                        <p>
+                        <p class="descP">
                             Assassin's Creed Red looks to finally fulfill the 
                             wishes of longtime fans by exploring feudal Japan, 
                             and recent rumors have stated AC Red could have both 
                             a ninja and samurai protagonist. 
                         </p>
-                        <button class="btn">View More</button>
+                        <button class="btn dice">View More</button>
                    </div>
                 </article>
 
@@ -99,13 +99,13 @@
                         <h4 class="desc">
                             Assassin's Creed Mirage
                         </h4>
-                        <p>
+                        <p class="descP">
                             Assassin's Creed Mirage is an action-adventure 
                             stealth game intended to be reminiscent of older 
                             Assassin's Creed titles, being more linear and 
                             story-focused and ...
                         </p>
-                        <button class="btn">View More</button>
+                        <button class="btn dice">View More</button>
                     </div>
                  </article>
 
@@ -115,12 +115,12 @@
                     </div> 
                     <div class="description">
                         <h4 class="desc">Diablo V</h4>
-                        <p>
+                        <p class="descP">
                             The endless battle between the High Heavens and the 
                             Burning Hells rages on as chaos threatens to consume 
                             Sanctuary. With ceaseless demons to slaughter, ...
                         </p>
-                        <button class="btn">View More</button>
+                        <button class="btn dice">View More</button>
                     </div>
                  </article>
 
@@ -130,12 +130,12 @@
                     </div> 
                     <div class="description">
                         <h4 class="desc">Ghost Of Tsushima</h4>
-                        <p>
+                        <p class="descP">
                             As one of the last surviving samurai, you rise from the
                             ashes to fight back. But honorable tactics won't lead you 
                             to victory. You must move beyond your samurai ...
                         </p>
-                        <button class="btn">View More</button>
+                        <button class="btn dice">View More</button>
                     </div>
                  </article>
             </div>
@@ -257,7 +257,7 @@
                 </p>
             </article>
 
-            <from>
+            <form class="contactForm">
                 <div class="formControl">
                     <label for="name">Name</label>
                     <input type="text" id="name" placeholder="Enter your name"/>
@@ -276,12 +276,27 @@
                         <i class="fa-solid fa-paper-plane"></i>
                     </button>
                 </div>
-            </from>
+            </form>
         </section>
 
         <!-- NEWS LETTER -->
         <section class="newsLetter">
-            
+            <article class="news">
+                <h2 class="newsHead">
+                    Stay Updated With News On Our Latest Games And News
+                </h2>
+                <p class="newsDesc">
+                    Sign up for our e-mail newsletter and stay informed 
+                    for what’s next on the horizon.
+                </p>
+            </article>
+
+            <form class="newsForm">
+                <div class="newsFormControl">
+                    <input type="email" name="email" id="email" placeholder="example@email.com">
+                    <button class="newsBtn dice">Subscribe</button> 
+                </div>
+            </form>
         </section>
     </main>
 </body>
