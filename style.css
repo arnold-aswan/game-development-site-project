@@ -7,7 +7,16 @@
 }
 
 :root {
-    --gray-blue: #415a77;
+    --navBg: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+    --cardShadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    --teamBg: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    --contactUsBg: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    --articlesBg: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+    --cardBorder: #7A7A7A;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 img,
@@ -28,6 +37,7 @@ ul {
 section {
     margin-bottom: 2rem;
 }
+
 .articles,
 footer {
     padding: 3rem 6rem;
@@ -51,6 +61,7 @@ footer {
     padding: 1rem 1.5rem;
     border: 2px solid #000;
     cursor: pointer;
+    transition: all .5s ease-in-out;
 }
 .dice:hover {
     background: #000;
@@ -68,7 +79,7 @@ body {
 
 /* NAVIGATION */
 .navbar {
-    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+    background: var(--navBg);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -84,12 +95,14 @@ body {
 }
 
 .listItem a {
+    padding-left: 5px;
     font-size: 1.2rem;
     font-weight: 500;
+    transition: all .2s ease-in;
 }
 .listItem a:hover {
-    color: red;
-    border-bottom: 4px solid red;
+    border-left: 3px solid red;
+    border-bottom: 3px solid red;
 }
 
 .iconItem .fa-brands {
@@ -126,11 +139,12 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
-.more {
+.releases .more {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
+    margin-bottom: .8rem;
 }
 .mReleases i {
     margin-left: .5rem;
@@ -146,12 +160,22 @@ body {
 }
 
 .card {
-    border: 1px solid #7A7A7A;
+    border: 1px solid var(--cardBorder);
     display: flex;
     flex-direction: column;
-}
-.game {
+    justify-content: space-between;
+    box-shadow: var(--cardShadow);
+    height: 387.2px;
     width: 20rem;
+    transition: .3s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-.8rem);
+}
+
+.game {
+    max-width: 20rem;
+    width: 100%;
 }
 .description {
     padding: .9rem .4rem 0;
@@ -183,17 +207,22 @@ body {
     margin-inline: 5rem;
     padding: 2rem 5rem;
 }
-
+.details h2.title  {
+    font-size: 2rem;
+    text-decoration: overline underline;
+}
 .details .title, .detailsP {
     color: white;
+    font-size: 1.1rem;
     font-weight: 500;
-    padding-block: 1.5rem;
+    padding-bottom: 1.3rem;
+    line-height: 2;
 }
 
 /* OUR TEAM */
 .ourTeam {
     margin-bottom: 0;
-    background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    background: var(--teamBg);
 }
 .ourTeam article {
     text-align: center;
@@ -223,7 +252,7 @@ body {
 
 /* CONTACT US */
 .contactUs {
-    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    background: var(--contactUsBg);
     color: #fff;
 }
 .contact {
@@ -285,7 +314,7 @@ body {
 
 /* NEWS & ARTICLES */
 .articles {
-    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+    background: var(--articlesBg);
 }
 
 .articleTitle {
@@ -355,4 +384,18 @@ footer {
 }
 .companyLink a:hover {
     color: red;
+}
+
+.top  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.btnTop:hover i {
+    color: #fff;
+}
+
+.fa-chevron-up {
+    font-size: 1.5rem;
 }

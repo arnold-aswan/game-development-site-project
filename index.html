@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fox ENT Studios</title>
+    <link rel="icon" type="image/jpg" href="./Images/fox.png"/>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/47e40bfee6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main class="mainWrapper">
+    <main class="mainWrapper" >
         <!-- NAVIGATION  -->
-        <nav class="navbar">
+        <nav class="navbar" id="top">
             <div class="logo">
                 <a href="/">
                     <img src="./Images/fox.png" 
@@ -23,10 +24,11 @@
             <div class="navigation">
                 <ul class="links">
                     <li class="listItem"><a href="/">Home</a></li>
-                    <li class="listItem"><a href="/">Our Games</a></li>
-                    <li class="listItem"><a href="/">Our Studio</a></li>
-                    <li class="listItem"><a href="/">About Us</a></li>
-                    <li class="listItem"><a href="/">Contact us</a></li>
+                    <li class="listItem"><a href="#games">Our Games</a></li>
+                    <li class="listItem"><a href="#ourTeam">Our Team</a></li>
+                    <li class="listItem"><a href="#aboutUs">About Us</a></li>
+                    <li class="listItem"><a href="#contactUs">Contact us</a></li>
+                    <li class="listItem"><a href="#explore">Explore</a></li>
                 </ul>
             </div>
 
@@ -52,17 +54,17 @@
         </nav>
 
         <!-- HERO SECTION -->
-        <section class="hero">
+        <section class="hero" id="hero">
             <article>
               <p class="tsushima">
                 We develop fun games with creative gameplay 
-                and story lines and twists
+                and story lines with twists
               </p>
             </article>
         </section>
 
         <!-- LATEST RELEASE -->
-        <section class="releases">
+        <section class="releases" id="games">
             <div class="more">
                 <h2 class="head">Latest releases</h2>
                 <button class="mReleases dice">
@@ -82,8 +84,8 @@
                             Assassin's Creed Red
                         </h4>
                         <p class="descP">
-                            Assassin's Creed Red looks to finally fulfill the 
-                            wishes of longtime fans by exploring feudal Japan, 
+                            Assassin's Creed Red looks to finally allow its longtime 
+                            fans by exploring feudal Japan, 
                             and recent rumors have stated AC Red could have both 
                             a ninja and samurai protagonist. 
                         </p>
@@ -103,7 +105,7 @@
                             Assassin's Creed Mirage is an action-adventure 
                             stealth game intended to be reminiscent of older 
                             Assassin's Creed titles, being more linear and 
-                            story-focused and ...
+                            story-focused and
                         </p>
                         <button class="btn dice">View More</button>
                     </div>
@@ -118,7 +120,7 @@
                         <p class="descP">
                             The endless battle between the High Heavens and the 
                             Burning Hells rages on as chaos threatens to consume 
-                            Sanctuary. With ceaseless demons to slaughter, ...
+                            Sanctuary. With ceaseless demons to slaughter,
                         </p>
                         <button class="btn dice">View More</button>
                     </div>
@@ -142,11 +144,11 @@
         </section>
 
         <!-- ABOUT US -->
-        <section class="aboutUs">
+        <section class="aboutUs" id="aboutUs">
             <article class="details">
                 <h2 class="title">About Us | Our Company</h2>
                 <p class="detailsP">
-                    Welcome to Chakra Studios, where creativity meets 
+                    Welcome to Fox ENT Studios, where creativity meets 
                     innovation in the world of gaming. Our dedicated 
                     team of developers, artists, and storytellers is 
                     committed to crafting unforgettable gaming 
@@ -155,7 +157,7 @@
                 </p>
 
                 <p class="detailsP">
-                    At Chakra Studios, we embrace collaboration 
+                    At Fox ENT Studios, we embrace collaboration 
                     and believe in the power of community. We value the input 
                     of our team members and actively involve players in the 
                     development process to create games that surpass expectations 
@@ -169,14 +171,14 @@
                     through attention to detail and excellence. 
                     Join us on this incredible journey as we push boundaries, 
                     embrace inclusivity, and create gaming experiences that
-                    leave a lasting impression. Welcome to Chakra Studios, 
+                    leave a lasting impression. Welcome to Fox ENT Studios, 
                     where dreams become games.
                 </p>
             </article>
         </section>
 
         <!-- OUR TEAM -->
-        <section class="ourTeam">
+        <section class="ourTeam" id="ourTeam">
             <article>
                 <h1 class="teamTitle">Meet Our Team</h1>
                 <h3 class="teamSub">We Have A Passion For Games And Design</h3>
@@ -194,7 +196,7 @@
                         <img src="./Images/pexels-khajotia.jpg" alt="teammember">
                     </div>
                     <div class="avatarDetails">
-                        <h3 class="name">Khajotia Patel</h3>
+                        <h3 class="name">Khajotia Kaparo</h3>
                         <h4 class="position">Developer</h4>
                     </div>
                 </article>
@@ -242,7 +244,7 @@
         </section>
 
         <!-- CONTACT US -->
-        <section class="contactUs">
+        <section class="contactUs" id="contactUs">
             <article class="contact">
                 <h1 class="quiz">
                     Have Any Questions ??,
@@ -360,7 +362,7 @@
         </section>
 
         <!-- FOOTER -->
-        <footer>
+        <footer id="explore">
             <article class="ending">
                 <div class="endLogo">
                     <img src="./Images/fox.png" alt="logo">
@@ -408,6 +410,13 @@
                     </li>
                 </ul>
             </article>
+
+            <div class="top">
+                <button class="btnTop dice">
+                    <a href="#top"><i class="fa-solid fa-chevron-up"></i></a>
+                </button>
+                <small class="hide">Back To Top</small>
+            </div>
         </footer>
     </main>
 </body>
